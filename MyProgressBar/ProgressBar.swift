@@ -24,8 +24,6 @@ struct ProgressBar: View {
                     .foregroundColor(Color.blue)
                     .frame(width: self.isShowing ? geometry.size.width * (self.progress / 100.0) : 0.0,
                            height: geometry.size.height)
-                    .frame(width: self.isShowing ? geometry.size.width * (self.progress / 100.0) : 0.0,
-                           height: geometry.size.height)
                     .animation(.linear(duration: 0.6))
             }
             .onAppear {
